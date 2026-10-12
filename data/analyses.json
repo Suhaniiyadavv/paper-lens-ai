@@ -1,0 +1,1345 @@
+{
+  "version": "1.0.0",
+  "analyses": {
+    "PL-KNM3QTX": {
+      "id": "PL-KNM3QTX",
+      "documentName": "sample_iot_agriculture_manuscript.pdf",
+      "fileType": "demo",
+      "fileSize": 5616,
+      "pageCount": 2,
+      "wordCount": 762,
+      "createdAt": "2026-10-12T17:32:50.745Z",
+      "completedAt": "2026-10-12T17:32:51.309Z",
+      "status": "completed",
+      "rubricVersion": "2026.1-Woxsen-MajorProject",
+      "manuscriptType": "imrad",
+      "targetStyle": "IEEE / ACM Standard",
+      "researchDomain": "Computer Science & Engineering",
+      "authorTitleInput": "A Novel IoT and Edge Computing Framework for Smart Agriculture Monitoring: Performance Analysis and Field Evaluation",
+      "overallScore": 81,
+      "scoreStatusLabel": "Promising with improvements",
+      "normalizedCalculationFormula": "Direct Sum: 80.7 / 100.0 pts = 81/100",
+      "extractionWarnings": [],
+      "aiAvailabilityStatus": "offline_fallback",
+      "categoryAssessments": [
+        {
+          "id": "CAT-STR",
+          "category": "Structure and completeness",
+          "earnedScore": 15,
+          "maxScore": 15,
+          "weight": 15,
+          "applicable": true,
+          "assessmentType": "rule_based",
+          "confidence": "high",
+          "humanVerificationRecommended": false,
+          "explanation": "Evaluates manuscript sections against target publishing standards (IMRaD, IEEE, ACM)."
+        },
+        {
+          "id": "CAT-TAK",
+          "category": "Title, abstract, and keywords",
+          "earnedScore": 12.2,
+          "maxScore": 15,
+          "weight": 15,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "high",
+          "humanVerificationRecommended": true,
+          "explanation": "Assesses title clarity, 5 core abstract components (problem, goal, method, result, conclusion), and indexing keywords."
+        },
+        {
+          "id": "CAT-PRB",
+          "category": "Research problem and objectives",
+          "earnedScore": 9,
+          "maxScore": 10,
+          "weight": 10,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "medium",
+          "humanVerificationRecommended": true,
+          "explanation": "Checks for explicit articulation of the scientific problem, clear aims or research questions, and contributions."
+        },
+        {
+          "id": "CAT-LIT",
+          "category": "Literature review and research gap",
+          "earnedScore": 11,
+          "maxScore": 15,
+          "weight": 15,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "medium",
+          "humanVerificationRecommended": true,
+          "explanation": "Evaluates prior art synthesis, critical analysis, and explicit identification of the research gap."
+        },
+        {
+          "id": "CAT-MTH",
+          "category": "Methodology reporting",
+          "earnedScore": 10,
+          "maxScore": 15,
+          "weight": 15,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "medium",
+          "humanVerificationRecommended": true,
+          "explanation": "Examines experimental design clarity, dataset disclosure, model formulations, and evaluation metrics."
+        },
+        {
+          "id": "CAT-RDC",
+          "category": "Results, discussion, and conclusion",
+          "earnedScore": 11.5,
+          "maxScore": 15,
+          "weight": 15,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "medium",
+          "humanVerificationRecommended": true,
+          "explanation": "Assesses empirical findings reporting, benchmark baselines, critical discussion, limitations, and future work."
+        },
+        {
+          "id": "CAT-CIT",
+          "category": "Citation and reference consistency",
+          "earnedScore": 7,
+          "maxScore": 10,
+          "weight": 10,
+          "applicable": true,
+          "assessmentType": "rule_based",
+          "confidence": "high",
+          "humanVerificationRecommended": false,
+          "explanation": "Deterministic cross-verification between in-text citations and bibliography entries, flagging uncited and missing items."
+        },
+        {
+          "id": "CAT-WRT",
+          "category": "Writing clarity and organization",
+          "earnedScore": 5,
+          "maxScore": 5,
+          "weight": 5,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "high",
+          "humanVerificationRecommended": false,
+          "explanation": "Readability metrics, sentence length variance, passive voice density, and organizational flow indicators."
+        }
+      ],
+      "findings": [
+        {
+          "id": "F-PRB-1",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Research Problem and Objectives",
+          "severity": "low",
+          "title": "Introduction lacks a distinct bulleted or enumerated contribution list",
+          "location": "Introduction",
+          "evidence": "No \"contributions of this paper are...\" pattern detected",
+          "explanation": "Top IEEE/ACM venues heavily favor explicit contribution bullet points at the end of the Introduction.",
+          "recommendation": "Add an enumerated summary of primary contributions (e.g., \"The main contributions are: 1) ... 2) ... 3) ...\").",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false
+        },
+        {
+          "id": "F-LIT-2",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Literature Review and Research Gap",
+          "severity": "medium",
+          "title": "Literature review appears descriptive rather than critical/comparative",
+          "location": "Related Work",
+          "evidence": "Lack of explicit contrastive transition markers (\"however\", \"in contrast\", \"unexplored\")",
+          "explanation": "A strong literature review must identify the limitations of prior work to motivate why the new work is needed.",
+          "recommendation": "Explicitly synthesize the gap: explain what prior studies achieved and what specific challenge remained unaddressed.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-MTH-3",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Methodology Reporting",
+          "severity": "medium",
+          "title": "Dataset or experimental parameters are not clearly detailed",
+          "location": "Methodology",
+          "evidence": "No mentions of dataset size, collection procedure, or hardware parameters detected",
+          "explanation": "Reproducibility hinges on clearly specifying data origins, splits (train/val/test), and configuration settings.",
+          "recommendation": "Add a dedicated subsection on dataset characteristics, preprocessing steps, and test environment.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-MTH-4",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Methodology Reporting",
+          "severity": "medium",
+          "title": "Evaluation metrics not explicitly defined in methodology",
+          "location": "Methodology",
+          "evidence": "No standard metric definitions (e.g. Accuracy, F1, RMSE, Latency) found",
+          "explanation": "Defining evaluation metrics before presenting results avoids ambiguity in experimental claims.",
+          "recommendation": "Specify the exact formulas and statistical measures used to evaluate performance.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-RDC-5",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Results, Discussion, and Conclusion",
+          "severity": "medium",
+          "title": "Results lack direct comparative baseline benchmarks",
+          "location": "Results",
+          "evidence": "No explicit baseline comparison markers (\"compared to\", \"baseline\", \"outperforms\") found",
+          "explanation": "Claiming performance benefits requires comparing against established baseline models or existing solutions.",
+          "recommendation": "Include a comparative analysis against at least 1-2 standard baselines.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-RDC-6",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Results, Discussion, and Conclusion",
+          "severity": "low",
+          "title": "Conclusion lacks explicit discussion of limitations or future work",
+          "location": "Conclusion",
+          "evidence": "No markers for future directions or limitations found in Conclusion",
+          "explanation": "Reviewers look favorably on candid discussions of study boundaries and concrete next steps.",
+          "recommendation": "Add a short paragraph outlining limitations and high-value future research trajectories.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-TIT-1",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Title, Abstract, and Keywords",
+          "severity": "low",
+          "title": "Potential filler phrase in title: \"Novel\"",
+          "location": "Title",
+          "evidence": "\"A Novel IoT and Edge Computing Framework for Smart Agriculture Monitoring: Performance Analysis and Field Evaluation\"",
+          "explanation": "Academic style guides generally discourage filler prefixes like \"Novel\", as research papers inherently present studies or new work.",
+          "recommendation": "Refactor the title to lead directly with the substantive subject matter or key technical contribution.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-ABS-2",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Title, Abstract, and Keywords",
+          "severity": "low",
+          "title": "Abstract may lack core structural elements (1 missing)",
+          "location": "Abstract",
+          "evidence": "Missing cues: Concluding implication/impact statement",
+          "explanation": "Comprehensive research abstracts explicitly state the problem, objective, methodology, key results, and broader implications.",
+          "recommendation": "Revise the abstract to clearly present: Concluding implication/impact statement.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-KEY-3",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Title, Abstract, and Keywords",
+          "severity": "low",
+          "title": "Few keywords provided",
+          "location": "Keywords",
+          "evidence": "Only 2 terms found: [IoT, Edge Computing]",
+          "explanation": "Fewer than 3 keywords may limit search indexing in IEEE Xplore, ACM Digital Library, or Scopus.",
+          "recommendation": "Add 2-3 additional relevant sub-domain or methodological keywords.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false
+        },
+        {
+          "id": "F-KEY-4",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Title, Abstract, and Keywords",
+          "severity": "low",
+          "title": "All keywords directly duplicate title terms",
+          "location": "Keywords",
+          "evidence": "All 2 keywords appear verbatim in the title",
+          "explanation": "Since search engines index the title by default, using identical keywords misses an opportunity to index related synonyms, parent domains, or techniques.",
+          "recommendation": "Supplement with broader domain tags or methodological terminology not explicitly found in the title.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false
+        },
+        {
+          "id": "F-CIT-1",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Citation and Reference Consistency",
+          "severity": "high",
+          "title": "In-text citations lack matching bibliography entries (1 detected)",
+          "location": "Body Text & References",
+          "evidence": "Unmatched citations: [15]",
+          "explanation": "Readers and peer reviewers will be unable to trace the source of claims cited with these keys.",
+          "recommendation": "Verify the bibliography and add complete citation entries for all cited sources.",
+          "assessmentType": "rule_based",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false
+        },
+        {
+          "id": "F-CIT-2",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Citation and Reference Consistency",
+          "severity": "medium",
+          "title": "Bibliography entries never cited in manuscript body (1 found)",
+          "location": "References",
+          "evidence": "Uncited entries: [5]",
+          "explanation": "In academic publishing (especially IEEE/ACM), every entry in the References section must be referenced in the body.",
+          "recommendation": "Either incorporate relevant in-text citations or remove superfluous bibliography entries.",
+          "assessmentType": "rule_based",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false
+        },
+        {
+          "id": "F-CIT-3",
+          "analysisId": "PL-KNM3QTX",
+          "category": "Citation and Reference Consistency",
+          "severity": "medium",
+          "title": "Duplicate reference entries detected (1 duplicates)",
+          "location": "References",
+          "evidence": "Repeated identifiers: [3]",
+          "explanation": "Duplicate bibliography entries cause numbering confusion and redundant citations.",
+          "recommendation": "Consolidate multiple entries into a single reference and update all in-text references.",
+          "assessmentType": "rule_based",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false
+        }
+      ],
+      "actionItems": [
+        {
+          "id": "ACT-PRB-1",
+          "findingId": "F-PRB-1",
+          "title": "Introduction lacks a distinct bulleted or enumerated contribution list",
+          "category": "Research Problem and Objectives",
+          "priority": "low",
+          "completed": false,
+          "location": "Introduction",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-LIT-2",
+          "findingId": "F-LIT-2",
+          "title": "Literature review appears descriptive rather than critical/comparative",
+          "category": "Literature Review and Research Gap",
+          "priority": "medium",
+          "completed": false,
+          "location": "Related Work",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-MTH-3",
+          "findingId": "F-MTH-3",
+          "title": "Dataset or experimental parameters are not clearly detailed",
+          "category": "Methodology Reporting",
+          "priority": "medium",
+          "completed": false,
+          "location": "Methodology",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-MTH-4",
+          "findingId": "F-MTH-4",
+          "title": "Evaluation metrics not explicitly defined in methodology",
+          "category": "Methodology Reporting",
+          "priority": "medium",
+          "completed": false,
+          "location": "Methodology",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-RDC-5",
+          "findingId": "F-RDC-5",
+          "title": "Results lack direct comparative baseline benchmarks",
+          "category": "Results, Discussion, and Conclusion",
+          "priority": "medium",
+          "completed": false,
+          "location": "Results",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-RDC-6",
+          "findingId": "F-RDC-6",
+          "title": "Conclusion lacks explicit discussion of limitations or future work",
+          "category": "Results, Discussion, and Conclusion",
+          "priority": "low",
+          "completed": false,
+          "location": "Conclusion",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-TIT-1",
+          "findingId": "F-TIT-1",
+          "title": "Potential filler phrase in title: \"Novel\"",
+          "category": "Title, Abstract, and Keywords",
+          "priority": "low",
+          "completed": false,
+          "location": "Title",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-ABS-2",
+          "findingId": "F-ABS-2",
+          "title": "Abstract may lack core structural elements (1 missing)",
+          "category": "Title, Abstract, and Keywords",
+          "priority": "low",
+          "completed": false,
+          "location": "Abstract",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-KEY-3",
+          "findingId": "F-KEY-3",
+          "title": "Few keywords provided",
+          "category": "Title, Abstract, and Keywords",
+          "priority": "low",
+          "completed": false,
+          "location": "Keywords",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-KEY-4",
+          "findingId": "F-KEY-4",
+          "title": "All keywords directly duplicate title terms",
+          "category": "Title, Abstract, and Keywords",
+          "priority": "low",
+          "completed": false,
+          "location": "Keywords",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-CIT-1",
+          "findingId": "F-CIT-1",
+          "title": "In-text citations lack matching bibliography entries (1 detected)",
+          "category": "Citation and Reference Consistency",
+          "priority": "high",
+          "completed": false,
+          "location": "Body Text & References",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-CIT-2",
+          "findingId": "F-CIT-2",
+          "title": "Bibliography entries never cited in manuscript body (1 found)",
+          "category": "Citation and Reference Consistency",
+          "priority": "medium",
+          "completed": false,
+          "location": "References",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        },
+        {
+          "id": "ACT-CIT-3",
+          "findingId": "F-CIT-3",
+          "title": "Duplicate reference entries detected (1 duplicates)",
+          "category": "Citation and Reference Consistency",
+          "priority": "medium",
+          "completed": false,
+          "location": "References",
+          "updatedAt": "2026-10-12T17:32:51.309Z"
+        }
+      ],
+      "strengths": [
+        "Complete macro-structural framework adhering to IMRAD publishing norms."
+      ],
+      "sections": {
+        "Title": {
+          "name": "Title",
+          "detectedHeading": "Document Header",
+          "content": "A Novel IoT and Edge Computing Framework for Smart Agriculture Monitoring: Performance Analysis and Field Evaluation",
+          "wordCount": 16,
+          "confidence": "detected"
+        },
+        "Abstract": {
+          "name": "Abstract",
+          "detectedHeading": "Abstract",
+          "content": "t\nIn recent years, agricultural productivity has faced unprecedented pressures due to climate unpredictability, resource depletion, and growing global population demands. The primary objective of this work is to present an end-to-end framework leveraging low-power edge sensor gateways to track soil moisture and ambient micro-climatic parameters. Experimental evaluations conducted over an eight-week pilot deployment reveal that our system achieves reliable continuous data streaming and reduces battery energy consumption across distributed agricultural nodes. This work demonstrates the practical viability of distributed edge computing for precision agriculture.",
+          "wordCount": 85,
+          "confidence": "detected"
+        },
+        "Keywords": {
+          "name": "Keywords",
+          "detectedHeading": "Keywords:",
+          "content": "IoT, Edge Computing",
+          "wordCount": 3,
+          "confidence": "detected"
+        },
+        "Introduction": {
+          "name": "Introduction",
+          "detectedHeading": "1. Introduction",
+          "content": "on\nModern agriculture increasingly depends on digitized sensing infrastructure to optimize water utilization, monitor microclimates, and increase crop yields. Traditional agricultural monitoring systems rely heavily on centralized cloud architectures, which introduce communication latency, excessive cellular data transmission costs, and vulnerabilities during network outages in rural settings. To address these infrastructural bottlenecks, we propose an intelligent edge computing gateway capable of aggregating sensor telemetry, filtering transient data anomalies locally, and forwarding telemetry packets to cloud analytics dashboards. \n\nOur main contributions in this paper are:\n1. We design a multi-tiered edge computing node architecture for rural deployments.\n2. We evaluate field battery longevity across solar-harvesting sensor motes.\n3. We provide an empirical assessment of sensor telemetry packet reception ratios under varying environmental weather conditions.",
+          "wordCount": 122,
+          "confidence": "detected"
+        },
+        "Related Work": {
+          "name": "Related Work",
+          "detectedHeading": "2. Related Work",
+          "content": "rk\nA significant body of scholarly work has investigated wireless sensor networks (WSN) in precision agriculture [1]. Smith et al. [2] introduced a Zigbee-based sensor mesh network for irrigation control in open-field crop environments. Patel and Kumar [3] explored LoRaWAN communication protocols for long-range agricultural telemetry and demonstrated transmission ranges exceeding four kilometers in line-of-sight topographies. In a related study, Wang [4] evaluated mobile sink nodes in greenhouse monitoring systems. Research by Chen et al. [5] examined edge filtering heuristics for smart sensors. Additionally, early work on predictive irrigation scheduling was documented by Lopez [15].",
+          "wordCount": 95,
+          "confidence": "detected"
+        },
+        "Methodology": {
+          "name": "Methodology",
+          "detectedHeading": "3. Methodology",
+          "content": "gy\nThe proposed framework comprises three discrete structural tiers: the sensing node tier, the local edge aggregator gateway, and the centralized telemetry dashboard. Sensing motes measure soil moisture using capacitive dielectric probes, temperature via digital thermocouples, and ambient humidity. Raw analog signals are sampled at five-minute intervals by an ARM Cortex-M4 microcontroller. Data packets are serialized using Protocol Buffers and transmitted to the edge gateway over a 2.4 GHz transceiver. \n\nThe edge gateway buffers incoming readings in local flash memory and applies an outlier rejection filter before initiating batch uploads to the cloud server. The testing was carried out during spring planting seasons in semi-arid conditions.",
+          "wordCount": 106,
+          "confidence": "detected"
+        },
+        "Results": {
+          "name": "Results",
+          "detectedHeading": "4. Results and Discussion",
+          "content": "on\nThe field deployment operated continuously over an evaluation period of 56 consecutive calendar days. Over 28,000 discrete sensor observations were logged. The capacitive soil moisture motes achieved a packet delivery success ratio of 98.4% under nominal atmospheric conditions. Power consumption profiles indicated that the edge gateway sustained continuous operation with an average draw of 145 mA at 5V DC. Sensor nodes operated on two AA rechargeable cells with small solar supplementary panels. Soil moisture variations correlated with recorded precipitation events and irrigation cycles throughout the test window.",
+          "wordCount": 88,
+          "confidence": "detected"
+        },
+        "Conclusion": {
+          "name": "Conclusion",
+          "detectedHeading": "5. Conclusion",
+          "content": "on\nThis paper presented an edge computing and IoT gateway architecture engineered for precision agriculture monitoring. Field trial evaluations demonstrated that edge-level anomaly filtering and batch scheduling reduce communication overhead while maintaining high packet delivery reliability. Future investigations will incorporate on-device tinyML machine learning models to forecast localized frost events and automate valve actuation in real time.",
+          "wordCount": 57,
+          "confidence": "detected"
+        },
+        "References": {
+          "name": "References",
+          "detectedHeading": "References",
+          "content": "es\n[1] K. Kumar and M. Singh, \"Wireless sensor network deployments in agricultural environments: A comprehensive survey,\" IEEE Internet of Things Journal, vol. 8, no. 4, pp. 2100-2115, 2021.\n[2] J. Smith, D. Miller, and T. Harris, \"Automated precision irrigation control utilizing Zigbee sensor networks,\" Computers and Electronics in Agriculture, vol. 162, pp. 102-114, 2019.\n[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transactions on Industrial Informatics, vol. 17, no. 6, pp. 3820-3831, 2020.\n[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transactions on Industrial Informatics, vol. 17, no. 6, pp. 3820-3831, 2020.\n[4] L. Wang, \"Greenhouse monitoring with autonomous mobile sink nodes,\" Journal of Agricultural Engineering, vol. 48, no. 2, pp. 88-97, 2020.\n[5] H. Chen, X. Zhang, and B. Liu, \"Edge-assisted anomaly filtering in sensor networks,\" IEEE Sensors Journal, vol. 22, no. 3, pp. 2450-2461, 2022.\n[12] M. Taylor, \"Solar energy harvesting techniques for outdoor sensor nodes,\" Renewable Energy, vol. 140, pp. 512-525, 2019.",
+          "wordCount": 168,
+          "confidence": "detected"
+        },
+        "Discussion": {
+          "name": "Discussion",
+          "detectedHeading": "Combined (Results and Discussion)",
+          "content": "(Combined with Results section)",
+          "wordCount": 0,
+          "confidence": "inferred"
+        }
+      },
+      "citationAudit": {
+        "totalCitationsFound": 13,
+        "totalReferencesInBibliography": 7,
+        "uncitedReferencesCount": 1,
+        "missingReferenceCitationsCount": 1,
+        "duplicateReferencesCount": 1,
+        "citationMatches": [
+          {
+            "citationKey": "[1]",
+            "occurrencesCount": 2,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "es [1] K. Kumar and M. Singh, \"Wireless sensor network deployments in agricultural environments: A c...",
+            "citationLocations": [
+              "...networks (WSN) in precision agriculture [1]. Smith et al. [2] introduced a Zigbee-based sensor mesh...",
+              "...lve actuation in real time. References [1] K. Kumar and M. Singh, \"Wireless sensor network deployme..."
+            ]
+          },
+          {
+            "citationKey": "[2]",
+            "occurrencesCount": 2,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "[2] J. Smith, D. Miller, and T. Harris, \"Automated precision irrigation control utilizing Zigbee sen...",
+            "citationLocations": [
+              "...precision agriculture [1]. Smith et al. [2] introduced a Zigbee-based sensor mesh network for irriga...",
+              "...al, vol. 8, no. 4, pp. 2100-2115, 2021. [2] J. Smith, D. Miller, and T. Harris, \"Automated precision..."
+            ]
+          },
+          {
+            "citationKey": "[3]",
+            "occurrencesCount": 3,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transaction...",
+            "citationLocations": [
+              "...ield crop environments. Patel and Kumar [3] explored LoRaWAN communication protocols for long-range...",
+              "...riculture, vol. 162, pp. 102-114, 2019. [3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry...",
+              "...s, vol. 17, no. 6, pp. 3820-3831, 2020. [3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry..."
+            ]
+          },
+          {
+            "citationKey": "[4]",
+            "occurrencesCount": 2,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transaction...",
+            "citationLocations": [
+              "...topographies. In a related study, Wang [4] evaluated mobile sink nodes in greenhouse monitoring sys...",
+              "...s, vol. 17, no. 6, pp. 3820-3831, 2020. [4] L. Wang, \"Greenhouse monitoring with autonomous mobile s..."
+            ]
+          },
+          {
+            "citationKey": "[5]",
+            "occurrencesCount": 2,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "[4] L. Wang, \"Greenhouse monitoring with autonomous mobile sink nodes,\" Journal of Agricultural Engi...",
+            "citationLocations": [
+              "...toring systems. Research by Chen et al. [5] examined edge filtering heuristics for smart sensors. Ad...",
+              "...ering, vol. 48, no. 2, pp. 88-97, 2020. [5] H. Chen, X. Zhang, and B. Liu, \"Edge-assisted anomaly fi..."
+            ]
+          },
+          {
+            "citationKey": "[15]",
+            "occurrencesCount": 1,
+            "hasMatchingReference": false,
+            "citationLocations": [
+              "...tion scheduling was documented by Lopez [15]. 3. Methodology The proposed framework comprises three..."
+            ]
+          },
+          {
+            "citationKey": "[12]",
+            "occurrencesCount": 1,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "[12] M. Taylor, \"Solar energy harvesting techniques for outdoor sensor nodes,\" Renewable Energy, vol...",
+            "citationLocations": [
+              "...l, vol. 22, no. 3, pp. 2450-2461, 2022. [12] M. Taylor, \"Solar energy harvesting techniques for outd..."
+            ]
+          }
+        ],
+        "bibliographyEntries": [
+          {
+            "raw": "es [1] K. Kumar and M. Singh, \"Wireless sensor network deployments in agricultural environments: A comprehensive survey,\" IEEE Internet of Things Journal, vol. 8, no. 4, pp. 2100-2115, 2021.",
+            "index": 1,
+            "year": "2021",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          },
+          {
+            "raw": "[2] J. Smith, D. Miller, and T. Harris, \"Automated precision irrigation control utilizing Zigbee sensor networks,\" Computers and Electronics in Agriculture, vol. 162, pp. 102-114, 2019.",
+            "index": 2,
+            "key": "[2]",
+            "year": "2019",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          },
+          {
+            "raw": "[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transactions on Industrial Informatics, vol. 17, no. 6, pp. 3820-3831, 2020.",
+            "index": 3,
+            "key": "[3]",
+            "year": "2020",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          },
+          {
+            "raw": "[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transactions on Industrial Informatics, vol. 17, no. 6, pp. 3820-3831, 2020.",
+            "index": 4,
+            "key": "[3]",
+            "year": "2020",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          },
+          {
+            "raw": "[4] L. Wang, \"Greenhouse monitoring with autonomous mobile sink nodes,\" Journal of Agricultural Engineering, vol. 48, no. 2, pp. 88-97, 2020.",
+            "index": 5,
+            "key": "[4]",
+            "year": "2020",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          },
+          {
+            "raw": "[5] H. Chen, X. Zhang, and B. Liu, \"Edge-assisted anomaly filtering in sensor networks,\" IEEE Sensors Journal, vol. 22, no. 3, pp. 2450-2461, 2022.",
+            "index": 6,
+            "key": "[5]",
+            "year": "2022",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": false
+          },
+          {
+            "raw": "[12] M. Taylor, \"Solar energy harvesting techniques for outdoor sensor nodes,\" Renewable Energy, vol. 140, pp. 512-525, 2019.",
+            "index": 7,
+            "key": "[12]",
+            "year": "2019",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          }
+        ]
+      },
+      "readability": {
+        "totalWords": 762,
+        "totalSentences": 51,
+        "averageSentenceLength": 14.9,
+        "longSentencesCount": 0,
+        "fleschReadingEase": 17.4,
+        "fleschKincaidGradeLevel": 14.5,
+        "automatedReadabilityIndex": 16,
+        "passiveVoiceEstimatedPercentage": 10,
+        "readingEaseDescription": "Very complex / dense technical academic prose"
+      },
+      "abstractComponentsDetected": {
+        "background": true,
+        "objective": true,
+        "methodology": true,
+        "results": true,
+        "conclusion": false
+      }
+    },
+    "PL-IH8HUHK": {
+      "id": "PL-IH8HUHK",
+      "documentName": "sample_iot_agriculture_manuscript.pdf",
+      "fileType": "demo",
+      "fileSize": 5616,
+      "pageCount": 2,
+      "wordCount": 762,
+      "createdAt": "2026-10-12T17:33:12.619Z",
+      "completedAt": "2026-10-12T17:33:13.143Z",
+      "status": "completed",
+      "rubricVersion": "2026.1-Woxsen-MajorProject",
+      "manuscriptType": "imrad",
+      "targetStyle": "IEEE / ACM Standard",
+      "researchDomain": "Computer Science & Engineering",
+      "authorTitleInput": "",
+      "overallScore": 81,
+      "scoreStatusLabel": "Promising with improvements",
+      "normalizedCalculationFormula": "Direct Sum: 80.7 / 100.0 pts = 81/100",
+      "extractionWarnings": [],
+      "aiAvailabilityStatus": "offline_fallback",
+      "categoryAssessments": [
+        {
+          "id": "CAT-STR",
+          "category": "Structure and completeness",
+          "earnedScore": 15,
+          "maxScore": 15,
+          "weight": 15,
+          "applicable": true,
+          "assessmentType": "rule_based",
+          "confidence": "high",
+          "humanVerificationRecommended": false,
+          "explanation": "Evaluates manuscript sections against target publishing standards (IMRaD, IEEE, ACM)."
+        },
+        {
+          "id": "CAT-TAK",
+          "category": "Title, abstract, and keywords",
+          "earnedScore": 12.2,
+          "maxScore": 15,
+          "weight": 15,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "high",
+          "humanVerificationRecommended": true,
+          "explanation": "Assesses title clarity, 5 core abstract components (problem, goal, method, result, conclusion), and indexing keywords."
+        },
+        {
+          "id": "CAT-PRB",
+          "category": "Research problem and objectives",
+          "earnedScore": 9,
+          "maxScore": 10,
+          "weight": 10,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "medium",
+          "humanVerificationRecommended": true,
+          "explanation": "Checks for explicit articulation of the scientific problem, clear aims or research questions, and contributions."
+        },
+        {
+          "id": "CAT-LIT",
+          "category": "Literature review and research gap",
+          "earnedScore": 11,
+          "maxScore": 15,
+          "weight": 15,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "medium",
+          "humanVerificationRecommended": true,
+          "explanation": "Evaluates prior art synthesis, critical analysis, and explicit identification of the research gap."
+        },
+        {
+          "id": "CAT-MTH",
+          "category": "Methodology reporting",
+          "earnedScore": 10,
+          "maxScore": 15,
+          "weight": 15,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "medium",
+          "humanVerificationRecommended": true,
+          "explanation": "Examines experimental design clarity, dataset disclosure, model formulations, and evaluation metrics."
+        },
+        {
+          "id": "CAT-RDC",
+          "category": "Results, discussion, and conclusion",
+          "earnedScore": 11.5,
+          "maxScore": 15,
+          "weight": 15,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "medium",
+          "humanVerificationRecommended": true,
+          "explanation": "Assesses empirical findings reporting, benchmark baselines, critical discussion, limitations, and future work."
+        },
+        {
+          "id": "CAT-CIT",
+          "category": "Citation and reference consistency",
+          "earnedScore": 7,
+          "maxScore": 10,
+          "weight": 10,
+          "applicable": true,
+          "assessmentType": "rule_based",
+          "confidence": "high",
+          "humanVerificationRecommended": false,
+          "explanation": "Deterministic cross-verification between in-text citations and bibliography entries, flagging uncited and missing items."
+        },
+        {
+          "id": "CAT-WRT",
+          "category": "Writing clarity and organization",
+          "earnedScore": 5,
+          "maxScore": 5,
+          "weight": 5,
+          "applicable": true,
+          "assessmentType": "heuristic",
+          "confidence": "high",
+          "humanVerificationRecommended": false,
+          "explanation": "Readability metrics, sentence length variance, passive voice density, and organizational flow indicators."
+        }
+      ],
+      "findings": [
+        {
+          "id": "F-PRB-1",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Research Problem and Objectives",
+          "severity": "low",
+          "title": "Introduction lacks a distinct bulleted or enumerated contribution list",
+          "location": "Introduction",
+          "evidence": "No \"contributions of this paper are...\" pattern detected",
+          "explanation": "Top IEEE/ACM venues heavily favor explicit contribution bullet points at the end of the Introduction.",
+          "recommendation": "Add an enumerated summary of primary contributions (e.g., \"The main contributions are: 1) ... 2) ... 3) ...\").",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false,
+          "resolved": true
+        },
+        {
+          "id": "F-LIT-2",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Literature Review and Research Gap",
+          "severity": "medium",
+          "title": "Literature review appears descriptive rather than critical/comparative",
+          "location": "Related Work",
+          "evidence": "Lack of explicit contrastive transition markers (\"however\", \"in contrast\", \"unexplored\")",
+          "explanation": "A strong literature review must identify the limitations of prior work to motivate why the new work is needed.",
+          "recommendation": "Explicitly synthesize the gap: explain what prior studies achieved and what specific challenge remained unaddressed.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-MTH-3",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Methodology Reporting",
+          "severity": "medium",
+          "title": "Dataset or experimental parameters are not clearly detailed",
+          "location": "Methodology",
+          "evidence": "No mentions of dataset size, collection procedure, or hardware parameters detected",
+          "explanation": "Reproducibility hinges on clearly specifying data origins, splits (train/val/test), and configuration settings.",
+          "recommendation": "Add a dedicated subsection on dataset characteristics, preprocessing steps, and test environment.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-MTH-4",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Methodology Reporting",
+          "severity": "medium",
+          "title": "Evaluation metrics not explicitly defined in methodology",
+          "location": "Methodology",
+          "evidence": "No standard metric definitions (e.g. Accuracy, F1, RMSE, Latency) found",
+          "explanation": "Defining evaluation metrics before presenting results avoids ambiguity in experimental claims.",
+          "recommendation": "Specify the exact formulas and statistical measures used to evaluate performance.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-RDC-5",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Results, Discussion, and Conclusion",
+          "severity": "medium",
+          "title": "Results lack direct comparative baseline benchmarks",
+          "location": "Results",
+          "evidence": "No explicit baseline comparison markers (\"compared to\", \"baseline\", \"outperforms\") found",
+          "explanation": "Claiming performance benefits requires comparing against established baseline models or existing solutions.",
+          "recommendation": "Include a comparative analysis against at least 1-2 standard baselines.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-RDC-6",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Results, Discussion, and Conclusion",
+          "severity": "low",
+          "title": "Conclusion lacks explicit discussion of limitations or future work",
+          "location": "Conclusion",
+          "evidence": "No markers for future directions or limitations found in Conclusion",
+          "explanation": "Reviewers look favorably on candid discussions of study boundaries and concrete next steps.",
+          "recommendation": "Add a short paragraph outlining limitations and high-value future research trajectories.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-TIT-1",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Title, Abstract, and Keywords",
+          "severity": "low",
+          "title": "Potential filler phrase in title: \"Novel\"",
+          "location": "Title",
+          "evidence": "\"A Novel IoT and Edge Computing Framework for Smart Agriculture Monitoring: Performance Analysis and Field Evaluation\"",
+          "explanation": "Academic style guides generally discourage filler prefixes like \"Novel\", as research papers inherently present studies or new work.",
+          "recommendation": "Refactor the title to lead directly with the substantive subject matter or key technical contribution.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-ABS-2",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Title, Abstract, and Keywords",
+          "severity": "low",
+          "title": "Abstract may lack core structural elements (1 missing)",
+          "location": "Abstract",
+          "evidence": "Missing cues: Concluding implication/impact statement",
+          "explanation": "Comprehensive research abstracts explicitly state the problem, objective, methodology, key results, and broader implications.",
+          "recommendation": "Revise the abstract to clearly present: Concluding implication/impact statement.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": false,
+          "humanVerificationRequired": true
+        },
+        {
+          "id": "F-KEY-3",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Title, Abstract, and Keywords",
+          "severity": "low",
+          "title": "Few keywords provided",
+          "location": "Keywords",
+          "evidence": "Only 2 terms found: [IoT, Edge Computing]",
+          "explanation": "Fewer than 3 keywords may limit search indexing in IEEE Xplore, ACM Digital Library, or Scopus.",
+          "recommendation": "Add 2-3 additional relevant sub-domain or methodological keywords.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false
+        },
+        {
+          "id": "F-KEY-4",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Title, Abstract, and Keywords",
+          "severity": "low",
+          "title": "All keywords directly duplicate title terms",
+          "location": "Keywords",
+          "evidence": "All 2 keywords appear verbatim in the title",
+          "explanation": "Since search engines index the title by default, using identical keywords misses an opportunity to index related synonyms, parent domains, or techniques.",
+          "recommendation": "Supplement with broader domain tags or methodological terminology not explicitly found in the title.",
+          "assessmentType": "heuristic",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false
+        },
+        {
+          "id": "F-CIT-1",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Citation and Reference Consistency",
+          "severity": "high",
+          "title": "In-text citations lack matching bibliography entries (1 detected)",
+          "location": "Body Text & References",
+          "evidence": "Unmatched citations: [15]",
+          "explanation": "Readers and peer reviewers will be unable to trace the source of claims cited with these keys.",
+          "recommendation": "Verify the bibliography and add complete citation entries for all cited sources.",
+          "assessmentType": "rule_based",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false
+        },
+        {
+          "id": "F-CIT-2",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Citation and Reference Consistency",
+          "severity": "medium",
+          "title": "Bibliography entries never cited in manuscript body (1 found)",
+          "location": "References",
+          "evidence": "Uncited entries: [5]",
+          "explanation": "In academic publishing (especially IEEE/ACM), every entry in the References section must be referenced in the body.",
+          "recommendation": "Either incorporate relevant in-text citations or remove superfluous bibliography entries.",
+          "assessmentType": "rule_based",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false
+        },
+        {
+          "id": "F-CIT-3",
+          "analysisId": "PL-IH8HUHK",
+          "category": "Citation and Reference Consistency",
+          "severity": "medium",
+          "title": "Duplicate reference entries detected (1 duplicates)",
+          "location": "References",
+          "evidence": "Repeated identifiers: [3]",
+          "explanation": "Duplicate bibliography entries cause numbering confusion and redundant citations.",
+          "recommendation": "Consolidate multiple entries into a single reference and update all in-text references.",
+          "assessmentType": "rule_based",
+          "isObjectivelyVerifiable": true,
+          "humanVerificationRequired": false
+        }
+      ],
+      "actionItems": [
+        {
+          "id": "ACT-PRB-1",
+          "findingId": "F-PRB-1",
+          "title": "Introduction lacks a distinct bulleted or enumerated contribution list",
+          "category": "Research Problem and Objectives",
+          "priority": "low",
+          "completed": true,
+          "location": "Introduction",
+          "updatedAt": "2026-10-12T17:33:23.311Z"
+        },
+        {
+          "id": "ACT-LIT-2",
+          "findingId": "F-LIT-2",
+          "title": "Literature review appears descriptive rather than critical/comparative",
+          "category": "Literature Review and Research Gap",
+          "priority": "medium",
+          "completed": false,
+          "location": "Related Work",
+          "updatedAt": "2026-10-12T17:33:13.142Z"
+        },
+        {
+          "id": "ACT-MTH-3",
+          "findingId": "F-MTH-3",
+          "title": "Dataset or experimental parameters are not clearly detailed",
+          "category": "Methodology Reporting",
+          "priority": "medium",
+          "completed": false,
+          "location": "Methodology",
+          "updatedAt": "2026-10-12T17:33:13.143Z"
+        },
+        {
+          "id": "ACT-MTH-4",
+          "findingId": "F-MTH-4",
+          "title": "Evaluation metrics not explicitly defined in methodology",
+          "category": "Methodology Reporting",
+          "priority": "medium",
+          "completed": false,
+          "location": "Methodology",
+          "updatedAt": "2026-10-12T17:33:13.143Z"
+        },
+        {
+          "id": "ACT-RDC-5",
+          "findingId": "F-RDC-5",
+          "title": "Results lack direct comparative baseline benchmarks",
+          "category": "Results, Discussion, and Conclusion",
+          "priority": "medium",
+          "completed": false,
+          "location": "Results",
+          "updatedAt": "2026-10-12T17:33:13.143Z"
+        },
+        {
+          "id": "ACT-RDC-6",
+          "findingId": "F-RDC-6",
+          "title": "Conclusion lacks explicit discussion of limitations or future work",
+          "category": "Results, Discussion, and Conclusion",
+          "priority": "low",
+          "completed": false,
+          "location": "Conclusion",
+          "updatedAt": "2026-10-12T17:33:13.143Z"
+        },
+        {
+          "id": "ACT-TIT-1",
+          "findingId": "F-TIT-1",
+          "title": "Potential filler phrase in title: \"Novel\"",
+          "category": "Title, Abstract, and Keywords",
+          "priority": "low",
+          "completed": false,
+          "location": "Title",
+          "updatedAt": "2026-10-12T17:33:13.143Z"
+        },
+        {
+          "id": "ACT-ABS-2",
+          "findingId": "F-ABS-2",
+          "title": "Abstract may lack core structural elements (1 missing)",
+          "category": "Title, Abstract, and Keywords",
+          "priority": "low",
+          "completed": false,
+          "location": "Abstract",
+          "updatedAt": "2026-10-12T17:33:13.143Z"
+        },
+        {
+          "id": "ACT-KEY-3",
+          "findingId": "F-KEY-3",
+          "title": "Few keywords provided",
+          "category": "Title, Abstract, and Keywords",
+          "priority": "low",
+          "completed": false,
+          "location": "Keywords",
+          "updatedAt": "2026-10-12T17:33:13.143Z"
+        },
+        {
+          "id": "ACT-KEY-4",
+          "findingId": "F-KEY-4",
+          "title": "All keywords directly duplicate title terms",
+          "category": "Title, Abstract, and Keywords",
+          "priority": "low",
+          "completed": false,
+          "location": "Keywords",
+          "updatedAt": "2026-10-12T17:33:13.143Z"
+        },
+        {
+          "id": "ACT-CIT-1",
+          "findingId": "F-CIT-1",
+          "title": "In-text citations lack matching bibliography entries (1 detected)",
+          "category": "Citation and Reference Consistency",
+          "priority": "high",
+          "completed": false,
+          "location": "Body Text & References",
+          "updatedAt": "2026-10-12T17:33:13.143Z"
+        },
+        {
+          "id": "ACT-CIT-2",
+          "findingId": "F-CIT-2",
+          "title": "Bibliography entries never cited in manuscript body (1 found)",
+          "category": "Citation and Reference Consistency",
+          "priority": "medium",
+          "completed": false,
+          "location": "References",
+          "updatedAt": "2026-10-12T17:33:13.143Z"
+        },
+        {
+          "id": "ACT-CIT-3",
+          "findingId": "F-CIT-3",
+          "title": "Duplicate reference entries detected (1 duplicates)",
+          "category": "Citation and Reference Consistency",
+          "priority": "medium",
+          "completed": false,
+          "location": "References",
+          "updatedAt": "2026-10-12T17:33:13.143Z"
+        }
+      ],
+      "strengths": [
+        "Complete macro-structural framework adhering to IMRAD publishing norms."
+      ],
+      "sections": {
+        "Title": {
+          "name": "Title",
+          "detectedHeading": "Document Header",
+          "content": "A Novel IoT and Edge Computing Framework for Smart Agriculture Monitoring: Performance Analysis and Field Evaluation",
+          "wordCount": 16,
+          "confidence": "detected"
+        },
+        "Abstract": {
+          "name": "Abstract",
+          "detectedHeading": "Abstract",
+          "content": "t\nIn recent years, agricultural productivity has faced unprecedented pressures due to climate unpredictability, resource depletion, and growing global population demands. The primary objective of this work is to present an end-to-end framework leveraging low-power edge sensor gateways to track soil moisture and ambient micro-climatic parameters. Experimental evaluations conducted over an eight-week pilot deployment reveal that our system achieves reliable continuous data streaming and reduces battery energy consumption across distributed agricultural nodes. This work demonstrates the practical viability of distributed edge computing for precision agriculture.",
+          "wordCount": 85,
+          "confidence": "detected"
+        },
+        "Keywords": {
+          "name": "Keywords",
+          "detectedHeading": "Keywords:",
+          "content": "IoT, Edge Computing",
+          "wordCount": 3,
+          "confidence": "detected"
+        },
+        "Introduction": {
+          "name": "Introduction",
+          "detectedHeading": "1. Introduction",
+          "content": "on\nModern agriculture increasingly depends on digitized sensing infrastructure to optimize water utilization, monitor microclimates, and increase crop yields. Traditional agricultural monitoring systems rely heavily on centralized cloud architectures, which introduce communication latency, excessive cellular data transmission costs, and vulnerabilities during network outages in rural settings. To address these infrastructural bottlenecks, we propose an intelligent edge computing gateway capable of aggregating sensor telemetry, filtering transient data anomalies locally, and forwarding telemetry packets to cloud analytics dashboards. \n\nOur main contributions in this paper are:\n1. We design a multi-tiered edge computing node architecture for rural deployments.\n2. We evaluate field battery longevity across solar-harvesting sensor motes.\n3. We provide an empirical assessment of sensor telemetry packet reception ratios under varying environmental weather conditions.",
+          "wordCount": 122,
+          "confidence": "detected"
+        },
+        "Related Work": {
+          "name": "Related Work",
+          "detectedHeading": "2. Related Work",
+          "content": "rk\nA significant body of scholarly work has investigated wireless sensor networks (WSN) in precision agriculture [1]. Smith et al. [2] introduced a Zigbee-based sensor mesh network for irrigation control in open-field crop environments. Patel and Kumar [3] explored LoRaWAN communication protocols for long-range agricultural telemetry and demonstrated transmission ranges exceeding four kilometers in line-of-sight topographies. In a related study, Wang [4] evaluated mobile sink nodes in greenhouse monitoring systems. Research by Chen et al. [5] examined edge filtering heuristics for smart sensors. Additionally, early work on predictive irrigation scheduling was documented by Lopez [15].",
+          "wordCount": 95,
+          "confidence": "detected"
+        },
+        "Methodology": {
+          "name": "Methodology",
+          "detectedHeading": "3. Methodology",
+          "content": "gy\nThe proposed framework comprises three discrete structural tiers: the sensing node tier, the local edge aggregator gateway, and the centralized telemetry dashboard. Sensing motes measure soil moisture using capacitive dielectric probes, temperature via digital thermocouples, and ambient humidity. Raw analog signals are sampled at five-minute intervals by an ARM Cortex-M4 microcontroller. Data packets are serialized using Protocol Buffers and transmitted to the edge gateway over a 2.4 GHz transceiver. \n\nThe edge gateway buffers incoming readings in local flash memory and applies an outlier rejection filter before initiating batch uploads to the cloud server. The testing was carried out during spring planting seasons in semi-arid conditions.",
+          "wordCount": 106,
+          "confidence": "detected"
+        },
+        "Results": {
+          "name": "Results",
+          "detectedHeading": "4. Results and Discussion",
+          "content": "on\nThe field deployment operated continuously over an evaluation period of 56 consecutive calendar days. Over 28,000 discrete sensor observations were logged. The capacitive soil moisture motes achieved a packet delivery success ratio of 98.4% under nominal atmospheric conditions. Power consumption profiles indicated that the edge gateway sustained continuous operation with an average draw of 145 mA at 5V DC. Sensor nodes operated on two AA rechargeable cells with small solar supplementary panels. Soil moisture variations correlated with recorded precipitation events and irrigation cycles throughout the test window.",
+          "wordCount": 88,
+          "confidence": "detected"
+        },
+        "Conclusion": {
+          "name": "Conclusion",
+          "detectedHeading": "5. Conclusion",
+          "content": "on\nThis paper presented an edge computing and IoT gateway architecture engineered for precision agriculture monitoring. Field trial evaluations demonstrated that edge-level anomaly filtering and batch scheduling reduce communication overhead while maintaining high packet delivery reliability. Future investigations will incorporate on-device tinyML machine learning models to forecast localized frost events and automate valve actuation in real time.",
+          "wordCount": 57,
+          "confidence": "detected"
+        },
+        "References": {
+          "name": "References",
+          "detectedHeading": "References",
+          "content": "es\n[1] K. Kumar and M. Singh, \"Wireless sensor network deployments in agricultural environments: A comprehensive survey,\" IEEE Internet of Things Journal, vol. 8, no. 4, pp. 2100-2115, 2021.\n[2] J. Smith, D. Miller, and T. Harris, \"Automated precision irrigation control utilizing Zigbee sensor networks,\" Computers and Electronics in Agriculture, vol. 162, pp. 102-114, 2019.\n[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transactions on Industrial Informatics, vol. 17, no. 6, pp. 3820-3831, 2020.\n[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transactions on Industrial Informatics, vol. 17, no. 6, pp. 3820-3831, 2020.\n[4] L. Wang, \"Greenhouse monitoring with autonomous mobile sink nodes,\" Journal of Agricultural Engineering, vol. 48, no. 2, pp. 88-97, 2020.\n[5] H. Chen, X. Zhang, and B. Liu, \"Edge-assisted anomaly filtering in sensor networks,\" IEEE Sensors Journal, vol. 22, no. 3, pp. 2450-2461, 2022.\n[12] M. Taylor, \"Solar energy harvesting techniques for outdoor sensor nodes,\" Renewable Energy, vol. 140, pp. 512-525, 2019.",
+          "wordCount": 168,
+          "confidence": "detected"
+        },
+        "Discussion": {
+          "name": "Discussion",
+          "detectedHeading": "Combined (Results and Discussion)",
+          "content": "(Combined with Results section)",
+          "wordCount": 0,
+          "confidence": "inferred"
+        }
+      },
+      "citationAudit": {
+        "totalCitationsFound": 13,
+        "totalReferencesInBibliography": 7,
+        "uncitedReferencesCount": 1,
+        "missingReferenceCitationsCount": 1,
+        "duplicateReferencesCount": 1,
+        "citationMatches": [
+          {
+            "citationKey": "[1]",
+            "occurrencesCount": 2,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "es [1] K. Kumar and M. Singh, \"Wireless sensor network deployments in agricultural environments: A c...",
+            "citationLocations": [
+              "...networks (WSN) in precision agriculture [1]. Smith et al. [2] introduced a Zigbee-based sensor mesh...",
+              "...lve actuation in real time. References [1] K. Kumar and M. Singh, \"Wireless sensor network deployme..."
+            ]
+          },
+          {
+            "citationKey": "[2]",
+            "occurrencesCount": 2,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "[2] J. Smith, D. Miller, and T. Harris, \"Automated precision irrigation control utilizing Zigbee sen...",
+            "citationLocations": [
+              "...precision agriculture [1]. Smith et al. [2] introduced a Zigbee-based sensor mesh network for irriga...",
+              "...al, vol. 8, no. 4, pp. 2100-2115, 2021. [2] J. Smith, D. Miller, and T. Harris, \"Automated precision..."
+            ]
+          },
+          {
+            "citationKey": "[3]",
+            "occurrencesCount": 3,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transaction...",
+            "citationLocations": [
+              "...ield crop environments. Patel and Kumar [3] explored LoRaWAN communication protocols for long-range...",
+              "...riculture, vol. 162, pp. 102-114, 2019. [3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry...",
+              "...s, vol. 17, no. 6, pp. 3820-3831, 2020. [3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry..."
+            ]
+          },
+          {
+            "citationKey": "[4]",
+            "occurrencesCount": 2,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transaction...",
+            "citationLocations": [
+              "...topographies. In a related study, Wang [4] evaluated mobile sink nodes in greenhouse monitoring sys...",
+              "...s, vol. 17, no. 6, pp. 3820-3831, 2020. [4] L. Wang, \"Greenhouse monitoring with autonomous mobile s..."
+            ]
+          },
+          {
+            "citationKey": "[5]",
+            "occurrencesCount": 2,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "[4] L. Wang, \"Greenhouse monitoring with autonomous mobile sink nodes,\" Journal of Agricultural Engi...",
+            "citationLocations": [
+              "...toring systems. Research by Chen et al. [5] examined edge filtering heuristics for smart sensors. Ad...",
+              "...ering, vol. 48, no. 2, pp. 88-97, 2020. [5] H. Chen, X. Zhang, and B. Liu, \"Edge-assisted anomaly fi..."
+            ]
+          },
+          {
+            "citationKey": "[15]",
+            "occurrencesCount": 1,
+            "hasMatchingReference": false,
+            "citationLocations": [
+              "...tion scheduling was documented by Lopez [15]. 3. Methodology The proposed framework comprises three..."
+            ]
+          },
+          {
+            "citationKey": "[12]",
+            "occurrencesCount": 1,
+            "hasMatchingReference": true,
+            "matchedReferenceText": "[12] M. Taylor, \"Solar energy harvesting techniques for outdoor sensor nodes,\" Renewable Energy, vol...",
+            "citationLocations": [
+              "...l, vol. 22, no. 3, pp. 2450-2461, 2022. [12] M. Taylor, \"Solar energy harvesting techniques for outd..."
+            ]
+          }
+        ],
+        "bibliographyEntries": [
+          {
+            "raw": "es [1] K. Kumar and M. Singh, \"Wireless sensor network deployments in agricultural environments: A comprehensive survey,\" IEEE Internet of Things Journal, vol. 8, no. 4, pp. 2100-2115, 2021.",
+            "index": 1,
+            "year": "2021",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          },
+          {
+            "raw": "[2] J. Smith, D. Miller, and T. Harris, \"Automated precision irrigation control utilizing Zigbee sensor networks,\" Computers and Electronics in Agriculture, vol. 162, pp. 102-114, 2019.",
+            "index": 2,
+            "key": "[2]",
+            "year": "2019",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          },
+          {
+            "raw": "[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transactions on Industrial Informatics, vol. 17, no. 6, pp. 3820-3831, 2020.",
+            "index": 3,
+            "key": "[3]",
+            "year": "2020",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          },
+          {
+            "raw": "[3] R. Patel and S. Kumar, \"Evaluation of LoRaWAN telemetry in rural topographies,\" IEEE Transactions on Industrial Informatics, vol. 17, no. 6, pp. 3820-3831, 2020.",
+            "index": 4,
+            "key": "[3]",
+            "year": "2020",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          },
+          {
+            "raw": "[4] L. Wang, \"Greenhouse monitoring with autonomous mobile sink nodes,\" Journal of Agricultural Engineering, vol. 48, no. 2, pp. 88-97, 2020.",
+            "index": 5,
+            "key": "[4]",
+            "year": "2020",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          },
+          {
+            "raw": "[5] H. Chen, X. Zhang, and B. Liu, \"Edge-assisted anomaly filtering in sensor networks,\" IEEE Sensors Journal, vol. 22, no. 3, pp. 2450-2461, 2022.",
+            "index": 6,
+            "key": "[5]",
+            "year": "2022",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": false
+          },
+          {
+            "raw": "[12] M. Taylor, \"Solar energy harvesting techniques for outdoor sensor nodes,\" Renewable Energy, vol. 140, pp. 512-525, 2019.",
+            "index": 7,
+            "key": "[12]",
+            "year": "2019",
+            "hasDoi": false,
+            "hasUrl": false,
+            "isCitedInText": true
+          }
+        ]
+      },
+      "readability": {
+        "totalWords": 762,
+        "totalSentences": 51,
+        "averageSentenceLength": 14.9,
+        "longSentencesCount": 0,
+        "fleschReadingEase": 17.4,
+        "fleschKincaidGradeLevel": 14.5,
+        "automatedReadabilityIndex": 16,
+        "passiveVoiceEstimatedPercentage": 10,
+        "readingEaseDescription": "Very complex / dense technical academic prose"
+      },
+      "abstractComponentsDetected": {
+        "background": true,
+        "objective": true,
+        "methodology": true,
+        "results": true,
+        "conclusion": false
+      }
+    }
+  },
+  "updatedAt": "2026-10-12T17:33:23.311Z"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "PaperLens AI",
+  "description": "AI-Assisted Research Paper Quality Assessment and Feedback System for academic manuscript readiness, citation consistency, section analysis, and rubric-based scoring.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
